@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Meta>
+  <title>Ukagaka for Elin</title>
+  <id>ukagaka_for_elin</id>
+  <author>Tatakinov</author>
+  <builtin>false</builtin>
+  <loadPriority>100</loadPriority>
+  <version>0.22.1</version>
+  <description>
+      # Ukagaka for Elin
+
+      ## これは何？
+
+      SSTP経由で伺かのゴーストにElinの情報を送ります。
+      伺かって何？という方はいますぐ目の前の端末で調べるんだ。
+
+      ## 導入方法
+      
+      https://ssp.shillest.net/ からSSPをダウンロードしてインストールします。
+      SSPを起動すると、エミリーなる娘が出迎えてくれるので説明を聞きつつ、
+      https://github.com/Tatakinov/wind_memory_putit/releases から
+      wind_memory_putit.nar をダウンロードしてドラッグアンドドロップします。
+      呼ぶ？と聞かれるので切り替えます。
+
+      ## 使い方
+
+      ほっといてもそのうち喋り出す他、Elin内で起こった事に対して反応します。
+
+      ## 出来ること
+
+      クソみたいな初心者サポートトーク
+      マップに入った時に反応
+      お宝が生成されると反応
+      強い敵が現れると反応
+      何か釣り上げると反応
+      敵をターゲッティングすると反応
+
+      ## 出来ないこと
+
+      複数のゴーストが起動していると、
+      ゴーストがElinの情報をうまく受信できない場合があります。
+
+      ## MODの干渉
+
+      このMODは情報を垂れ流しているだけなので、
+      セーブデータや他MODに干渉することはありません。
+      (他MODに干渉されることはあるかもしれません)
+
+  </description>
+</Meta>
