@@ -314,4 +314,18 @@ namespace Ukagaka {
             client.Enqueue("OnElinCatchFish", __result.GetName(NameStyle.Full));
         }
     }
+
+    [HarmonyPatch(typeof(Player))]
+    [HarmonyPatch(nameof(Player.ModKarma))]
+    class KarmaPatch {
+        public static void Prefix(out int __state, Player __instance) {
+            __state = __instance.karma;
+        }
+        public static void Postfix(int __state, Player __instance) {
+            SSTPClient client = SSTPClient.GetInstance();
+            if (__state != __instance.karma) {
+                client.Enqueue("OnElinKarmaChange", __state, __instance.karma);
+            }
+        }
+    }
 }
